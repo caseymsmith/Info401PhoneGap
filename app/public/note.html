@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notekeeper</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" 
+      href="jquery.mobile-1.4.5.min.css" />
+<script type="text/javascript" 
+        src="jquery-2.2.4.min.js">
+</script>
+<script type="text/javascript" 
+        src="jquery.mobile-1.4.5.min.js">
+</script>
+<script src="application.js"></script>
+</head>
+<body>
+
+   <div data-role="page">
+         <div data-role="header">
+               <h1>Course Task List</h1>
+         </div>
+     
+         <p>
+           <center><img src="https://cdn.gomix.com/77204214-f9f1-47d7-8d02-a0a5799bca14%2Fgif2.gif" width="25%"></center>     
+         </p>
+
+         <div role="main" class="ui-content">
+         <form>
+               <div class="ui-field-contain">
+                 <input id="title" type="text" placeholder="Task Title" />
+               </div>
+               <div class="ui-field-contain">
+                 <input id="date" type="text" placeholder="MM/DD/YYYY"/>
+               </div>
+           
+               <div class="ui-field-contain">
+                      <textarea id="note" placeholder="Task Details">
+                      </textarea>
+               </div>
+               
+               <div class="ui-grid-a">
+                      <div class="ui-block-a">
+                            <input id="btnNoThanks" type="submit" value="Nevermind" />
+                      </div>
+                      <div class="ui-block-b">
+                            <input id="btnAddNote" type="button" value="Add Task" />
+                      </div>
+               </div>
+         </form>
+
+         <ul id="notesList" data-role="listview" data-inset="true"></ul>
+   </div>
+
+   <div data-role="footer" class="footer-docs">
+         <h5>So much to do but so little time.</h5>
+   </div>
+   </div>
+
+</body>
+</html>
